@@ -1,0 +1,136 @@
+# ============================================
+#  南昌大学 · 应用物理学 · 个人作品集仓库
+#  .gitignore —— 告诉 Git "哪些东西不要管"
+# ============================================
+
+# ---------- 操作系统与编辑器产生的垃圾文件 ----------
+# 别人打开你的仓库时不需要看到这些"私人杂物"
+.DS_Store            # macOS 桌面服务缓存
+Thumbs.db            # Windows 缩略图缓存
+Desktop.ini          # Windows 文件夹配置
+ehthumbs.db          # Windows 缩略图数据库
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (PyCharm / CLion)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+.\#*
+\#*\#
+
+# ---------- Python 运行环境 ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 虚拟环境：各自电脑上装一份就行，不必上传
+.venv/
+venv/
+ENV/
+env/
+.python-version
+.conda/
+
+# ---------- Jupyter Notebook ----------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---------- 科学计算 / 实验数据 ----------
+# 大体积实验原始数据、仿真结果，体积大且可重新生成
+*.dat
+*.bin
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.mat
+*.root
+*.csv.bak
+
+# 注意：实验最终结果图表可放 results/，但 >50MB 的大文件请勿提交
+
+# ---------- LaTeX / 论文排版中间产物 ----------
+# 只保留 .tex 源文件，其余是编译时自动生成的临时文件
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.xdv
+
+# ---------- C / C++ 编译产物（物理实验常用） ----------
+*.o
+*.obj
+*.exe
+*.dll
+*.lib
+*.a
+*.out.exe
+*.pdb
+
+# ---------- MATLAB ----------
+*.asv
+*.m~            
+slprj/
+octave-workspace
+
+# ---------- 私密信息（绝对不能上传！） ----------
+# 密码、密钥、API Token 一律不提交
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.txt
+credentials.json
+token.json
+
+# ---------- 临时文件与日志 ----------
+*.tmp
+*.temp
+*.bak
+*.log
+!results/**/*.log
